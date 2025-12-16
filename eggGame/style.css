@@ -1,0 +1,11 @@
+* {
+  margin: 10;
+  padding: 0;
+}
+
+#canvas {
+  border: 3px solid black;
+  background-image: url("farm.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
