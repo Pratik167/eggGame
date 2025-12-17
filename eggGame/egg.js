@@ -31,21 +31,10 @@ class Egg {
       this.size.width,
       this.size.height,
     );
-
   }
-  // collide(){
-  //   if(this.position.y+this.size.height>=500)
-  //   {
-  //     this.playMusic();
-  //     this.position.y=0;
-  //     this.position.x=10+Math.floor(Math.random()*970);
-  //     this.update();
-  //   }
-  // }
+  
   update(){
-    this.position.y=this.position.y+this.speed*this.direction.y;
-    // this.collide();
-    
+    this.position.y=this.position.y+this.speed*this.direction.y; 
   }
   playMusic(){
           let  audio=new Audio("plsSpeed.mp3");
