@@ -31,7 +31,7 @@ class Bucket{
     this.position.x-=this.speed;
     if(this.position.x<0)
     { 
-        this.position.x =25;
+        this.position.x =0;//25
     }
     
   }
@@ -40,7 +40,7 @@ class Bucket{
     this.position.x+=this.speed;
     if(this.position.x>940)
     {
-      this.position.x=920;
+      this.position.x=940;//920
     }
   }
 }

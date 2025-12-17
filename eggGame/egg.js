@@ -33,22 +33,22 @@ class Egg {
     );
 
   }
-  collide(){
-    if(this.position.y+this.size.height>=500)
-    {
-      this.playMusic();
-      this.position.y=0;
-      this.position.x=10+Math.floor(Math.random()*970);
-      this.update();
-    }
-  }
+  // collide(){
+  //   if(this.position.y+this.size.height>=500)
+  //   {
+  //     this.playMusic();
+  //     this.position.y=0;
+  //     this.position.x=10+Math.floor(Math.random()*970);
+  //     this.update();
+  //   }
+  // }
   update(){
     this.position.y=this.position.y+this.speed*this.direction.y;
-    this.collide();
+    // this.collide();
     
   }
   playMusic(){
-          let  audio=new Audio("1.mp3");
+          let  audio=new Audio("plsSpeed.mp3");
           audio.play()
         }
 }
