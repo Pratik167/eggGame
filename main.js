@@ -17,10 +17,10 @@ const Keys={};
 let count=0;
 let lives=5;
 
-score.textContent="Score:" + count;
-life.textContent="Lives:" + lives;
-eggSpeed.textContent="EggSpeed:" + egg.speed;
-bucketSpeed.textContent="Speed:" + bucket.maxSpeed;
+score.textContent="Score:"+count;
+life.textContent="Lives:"+lives;
+eggSpeed.textContent="EggSpeed:"+egg.speed;
+bucketSpeed.textContent="Speed:"+bucket.maxSpeed;
 
 function eggLoop(){
   requestAnimationFrame(eggLoop);
@@ -65,7 +65,7 @@ function eggLoop(){
       egg.speed+=0.5;
       eggSpeed.textContent="EggSpeed:"+egg.speed;
 
-      bucket.maxSpeed+=2;
+      bucket.maxSpeed+=0.5;
       bucketSpeed.textContent="Speed:"+bucket.maxSpeed;
     }
   }
