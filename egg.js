@@ -1,29 +1,29 @@
-class Egg {
-  constructor(ctx) {
+class Egg{
+  constructor(ctx){
     
-    this.ctx = ctx;
-    this.position = {
+    this.ctx=ctx;
+    this.position={
       x:60,
       y:60,
     };
 
-    this.size = {
+    this.size={
       width:50,
       height:50,
     };
 
-    this.color = "black";
-    this.speed = 1;
-    this.direction = {
+    this.color="black";
+    this.speed=1;
+    this.direction={
     x:1,
     y:1,
     }
 
-    this.image= new Image();
+    this.image=new Image();
     this.image.src="egg.png";
   }
 
-  draw() {
+  draw(){
     this.ctx.drawImage(
       this.image,
       this.position.x,
