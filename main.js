@@ -37,7 +37,7 @@ function eggLoop(){
       count=0;
       lives=5;
       egg.speed=1;
-      bucket.maxSpeed=12;
+      bucket.maxSpeed=3;
 
       score.textContent="Score:"+count;
       life.textContent="Lives:"+lives;
